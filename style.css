@@ -1,0 +1,184 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("./fonts/Roboto/Roboto-Light.ttf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url("./fonts/Roboto/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url("./fonts/Roboto/Roboto-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url("./fonts/Roboto/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+html, body {
+    margin: 0 auto;
+    background-size: 100% 100%;
+    min-height: 100%;
+    font-size: 16px;
+    font-family: Gilroy;
+}
+.container {
+    width: 80%;
+    min-width: 22rem;
+    max-width: 90rem;
+}
+.about-me-part {
+    background-color: #F6F6F6;
+}
+.nav-block a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #828282;
+}
+.nav-block a:hover {
+    color: #070707;
+}
+.info-block {
+    min-width: 18rem;
+}
+.info-block h3 {
+    font-size: 3rem;
+    max-width: 7.7rem;
+    line-height: 3.6rem;
+}
+.info-block p {
+    max-width: 9rem;
+    line-height: 1.36rem;
+    letter-spacing: 1px;
+}   
+.lng-btns {
+    transform: rotate(-90deg);
+}
+.lng-btn {
+    color: #828282;
+}
+.lng-btn:hover {
+    cursor: pointer;
+    color: black;
+}
+.portrait {
+    padding-bottom: 6.5rem;
+}
+.portrait-mob {
+    padding-bottom: 6.5rem;
+}
+.about-me-content {
+    width: 36%;
+    min-width: 18rem;
+    padding-top: 7.5rem;
+    padding-bottom: 6.7rem;
+}
+.about-me-content h3 {
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+}
+.about-me-content p {
+    font-size: 1.12rem;
+    line-height: 1.36rem;
+    font-weight: 500;
+}
+.my-skills h3 {
+    padding-top: 4.31rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    line-height: 2.63rem;
+}
+.my-skills p {
+    margin-bottom: 5.1rem;
+    line-height: 1.36rem;
+    font-weight: 500;
+}
+.programs-blocks {
+    margin-bottom: 4.8rem;
+    line-height: 1rem;
+}
+.programs-blocks h3 {
+    font-weight: 700;
+    font-size: 0.87rem;
+    color: #828282;
+}
+.pht-shp img {
+    background-color: #0a0a2a
+}
+.adobe-illt img {
+    background-color: #561902;
+}
+.adobe-aft-efcs img {
+    background-color: #320332;
+}
+.empt {
+    color: #dbcfcf;
+}
+.figma img {
+    width: 7.5rem;
+    height: 5.5rem;
+}
+ul {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    right: .5rem;
+    list-style-type: none;
+    padding: .3rem;
+}
+.menu-imit {
+    position: absolute;
+    top: 4rem;
+    right: .5rem;
+    width: 4rem;
+    height: 1.5rem;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 1rem;
+    color: white;
+}
+.menu-imit:focus + ul {
+    display: block;
+}
+ul li {
+    margin-top: .5rem;
+}
+ul a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #828282;
+}
+ul a:hover {
+    text-decoration: underline;
+}
+
+@media  screen and (min-width: 601px) {
+    .nav-block {
+        display: flex;
+    }
+    hr, .portrait {
+        display: block;
+    }
+    .menu-imit, .portrait-mob  {
+        display: none;
+    }
+}
+@media  screen and (max-width: 600px) {
+    .nav-block, hr, .portrait, .lng-btns {
+        display: none;
+    }
+    .info-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .programs-blocks {
+        flex-direction: column;
+    }  
+    .info-block p {
+        padding-top: 2rem;
+    }
+}
