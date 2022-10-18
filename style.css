@@ -28,7 +28,6 @@ html, body {
 }
 .container {
     width: 80%;
-    min-width: 22rem;
     max-width: 90rem;
 }
 .about-me-part {
@@ -36,7 +35,6 @@ html, body {
 }
 .nav-block a {
     font-size: 1.1rem;
-    text-decoration: none;
     color: #828282;
 }
 .nav-block a:hover {
@@ -57,6 +55,7 @@ html, body {
 }   
 .lng-btns {
     transform: rotate(-90deg);
+    padding-top: 3.25rem;
 }
 .lng-btn {
     color: #828282;
@@ -66,10 +65,10 @@ html, body {
     color: black;
 }
 .portrait {
-    padding-bottom: 6.5rem;
+    margin-bottom: 6.5rem;
 }
 .portrait-mob {
-    padding-bottom: 6.5rem;
+    margin-bottom: 6.5rem;
 }
 .about-me-content {
     width: 36%;
@@ -95,14 +94,12 @@ html, body {
 .my-skills p {
     margin-bottom: 5.1rem;
     line-height: 1.36rem;
-    font-weight: 500;
 }
 .programs-blocks {
     margin-bottom: 4.8rem;
     line-height: 1rem;
 }
 .programs-blocks h3 {
-    font-weight: 700;
     font-size: 0.87rem;
     color: #828282;
 }
@@ -124,61 +121,26 @@ html, body {
 }
 ul {
     display: none;
-    position: absolute;
-    top: 5rem;
+    top: 1rem;
     right: .5rem;
     list-style-type: none;
     padding: .3rem;
 }
 .menu-imit {
-    position: absolute;
-    top: 4rem;
-    right: .5rem;
+    top: 0;
+    right: 0;
     width: 4rem;
     height: 1.5rem;
     cursor: pointer;
-    background-color: black;
     border-radius: 1rem;
-    color: white;
 }
 .menu-imit:focus + ul {
     display: block;
 }
-ul li {
-    margin-top: .5rem;
-}
 ul a {
-    text-decoration: none;
-    font-weight: bold;
     color: #828282;
 }
 ul a:hover {
     text-decoration: underline;
-}
-
-@media  screen and (min-width: 601px) {
-    .nav-block {
-        display: flex;
-    }
-    hr, .portrait {
-        display: block;
-    }
-    .menu-imit, .portrait-mob  {
-        display: none;
-    }
-}
-@media  screen and (max-width: 600px) {
-    .nav-block, hr, .portrait, .lng-btns {
-        display: none;
-    }
-    .info-block {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .programs-blocks {
-        flex-direction: column;
-    }  
-    .info-block p {
-        padding-top: 2rem;
-    }
+    color: black;
 }
