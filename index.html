@@ -12,38 +12,38 @@
 <body>
     <div class="top-part bg-white">
         <div class="container mx-auto">
-            <div class="nav-block justify-content-between pt-4">
-                <a class="font-weight-bold" href="#">Home</a>
-                <a class="font-weight-bold" href="#">About me</a>
-                <a class="font-weight-bold" href="#">Skills</a>
-                <a class="font-weight-bold" href="#">Portfolio</a>
-                <a class="font-weight-bold" href="#">Contacts</a>
+            <div class="nav-block d-sm-flex d-none justify-content-between pt-4">
+                <a class="font-weight-bold text-decoration-none" href="#">Home</a>
+                <a class="font-weight-bold text-decoration-none" href="#">About me</a>
+                <a class="font-weight-bold text-decoration-none" href="#">Skills</a>
+                <a class="font-weight-bold text-decoration-none" href="#">Portfolio</a>
+                <a class="font-weight-bold text-decoration-none" href="#">Contacts</a>
             </div>
-            <hr class="mt-4">
-            <div class="info-block d-flex   justify-content-between position-relative pt-5"> 
+            <hr class="d-sm-block d-none mt-4">
+            <div class="info-block d-sm-flex flex-sm-row flex-column align-items-end justify-content-between position-relative mt-5">  
                 <h3 class="m-0 ">Denis Novik</h3>
-                <p class="m-0 pt-5 font-weight-normal">UX | UI designer 24 years old, Minsk</p> 
-                 <div class="lng-btns pt-5"> 
+                <p class="m-0 font-weight-normal">UX | UI designer 24 years old, Minsk</p>
+                 <div class="lng-btns d-sm-block d-none"> 
                     <button class="lng-btn p-0 border-0 font-weight-bold bg-white">RU</button> 
                     <span>|</span> 
                     <button class="lng-btn p-0 border-0 font-weight-bold bg-white">ENG</button>
                 </div>
-                <button class="menu-imit">
+                <button class="menu-imit d-sm-none d-block position-absolute bg-dark text-white">
                     Menu
                 </button>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contacts</a></li>
+                <ul class="position-absolute">
+                    <li class="mt-2"><a class="font-weigt-bold text-decoration-none" href="#">Home</a></li>
+                    <li class="mt-2"><a class="font-weigt-bold text-decoration-none" href="#">About me</a></li>
+                    <li class="mt-2"><a class="font-weigt-bold text-decoration-none" href="#">Skills</a></li>
+                    <li class="mt-2"><a class="font-weigt-bold text-decoration-none" href="#">Portfolio</a></li>
+                    <li class="mt-2"><a class="font-weigt-bold text-decoration-none" href="#">Contacts</a></li>
                 </ul>
             </div>    
-            <div class="portrait">
-                <img class="w-100 pt-5" src="./img/BSPP2266.png" alt="port">
+            <div class="portrait d-none d-sm-block mt-5">
+                <img class="w-100" src="./img/BSPP2266.png" alt="port">
             </div>
-            <div class="portrait-mob ">
-                <img class="w-100 pt-5" src="./img/BSPP2266 (1).png" alt="port">
+            <div class="portrait-mob d-block d-sm-none mt-5">
+                <img class="w-100" src="./img/BSPP2266 (1).png" alt="port">
             </div>
         </div>
     </div>   
@@ -63,14 +63,14 @@
         <div class="container mx-auto">
             <div class="my-skills">
                 <h3 class="mt-0">Skills</h3>
-                <p>I work in such programs as</p>
+                <p class="font-weight-normal">I work in such programs as</p>
             </div>
 
-            <div class="programs-blocks d-flex justify-content-between">
+            <div class="programs-blocks d-flex justify-content-between flex-sm-row flex-column">
                 <div class="pht-shp mb-5">
                     <img class="mb-3" src="./img/Vector.png" alt="photoshop img">
-                    <h3>Adobe</h3> 
-                    <h3>Photoshop</h3> 
+                    <h3 class="font-weight-bold">Adobe</h3> 
+                    <h3 class="font-weight-bold">Photoshop</h3> 
                     <p class="bi-star-fill d-inline"></p>
                     <p class="bi-star-fill d-inline"></p>
                     <p class="bi-star-fill d-inline"></p>
@@ -79,8 +79,8 @@
                 </div>    
                 <div class="adobe-illt mb-5">
                     <img class="mb-3" src="./img/Vector (1).png" alt="adobe-illustration img">
-                    <h3>Adobe</h3>
-                    <h3>Illustrator</h3>
+                    <h3 class="font-weight-bold">Adobe</h3>
+                    <h3 class="font-weight-bold">Illustrator</h3>
                     <p class="bi-star-fill d-inline"></p>
                     <p class="bi-star-fill d-inline"></p>
                     <p class="bi-star-fill d-inline"></p>
@@ -89,8 +89,8 @@
                 </div>    
                 <div class="adobe-aft-efcs mb-5">
                     <img class="mb-3" src="./img/Vector (2).png" alt="adobe-aft-efcs img">
-                    <h3>Adobe</h3>
-                    <h3>After Effects</h3> 
+                    <h3 class="font-weight-bold">Adobe</h3>
+                    <h3 class="font-weight-bold">After effects</h3> 
                     <p class="bi-star-fill d-inline"></p>
                     <p class="bi-star-fill d-inline"></p>
                     <p class="bi-star-fill d-inline"></p>
@@ -99,7 +99,7 @@
                 </div>   
                 <div class="figma mb-5">
                     <img class="mb-3" src="./img/Figma-1-logo.png" alt="figma img">
-                    <h3>Figma</h3>  
+                    <h3 class="font-weight-bold">Figma</h3>  
                     <p class="bi-star-fill d-inline"></p>
                     <p class="bi-star-fill d-inline"></p>
                     <p class="bi-star-fill d-inline"></p>
@@ -110,4 +110,4 @@
         </div>
     </div> 
 </body>
-</html>               
+</html>
